@@ -1,0 +1,96 @@
+body{
+    background-color: #DEE;
+}
+img {
+  border-radius: 50%;
+  box-shadow: 0px 0px 2px 2px #010;
+  margin: 5px 0px 0px 10px;
+  width: 320px;
+  height: 320px;
+  position:absolute;
+  float: left;
+}
+
+#bigGrid{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 50px;
+    margin-left: 250px;
+    grid-row-gap: 50px;
+}
+
+.InfoBoxGrid{
+    display: grid;
+    background-color: #EFF;
+    font-size: 1.5em;
+    font-family: Arial;
+   
+    grid-template-columns: auto auto;
+    width: 700px;
+    grid-row-gap: 10px;
+}
+
+.Header {
+    font-size: 1.5em;
+    background-color: #889;
+    color: #EEF;
+    font-weight:bold;
+    grid-column-start: 1;
+    grid-column-end:3;
+    text-align: center;
+}
+.fHeader{
+    grid-column-start: 1;
+    font-weight: Bold;
+    color: #556;
+    padding-left: 5%;
+}
+
+.fContent{
+    grid-column-start: 2;
+    text-align: right;
+    padding-right: 5%;
+        
+
+}
+
+#cabecera { 
+    display:grid;
+    background-color: #273238;  
+    color: #f8ffff;  
+    text-align: right;   
+    box-shadow: 0px 0px 2px 2px #010;
+    grid-column-gap: 2px;
+    grid-template-columns:  100px 1000px;
+}
+#apellido { color: #ababab; font-weight:bold;}
+#granNombre{
+    font-size: 4em;
+    font-family: Impact;
+    grid-row-start: 1;
+    grid-column-start: 2;
+    margin-left: 200px;
+}
+
+#titulacion{
+    font-size: 1.5em;
+    font-family: Arial;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    margin-left: 500px;
+     color: #ababab;
+    
+}
+#empty{
+        grid-row-start:1;
+        grid-column-start: 1;
+        background: #DEE !important;
+        width: 100px !important;
+
+}
+
+#personalProfile{
+        grid-row-start:1;
+        grid-column-start: 2;
+
+}
