@@ -1,7 +1,7 @@
 :root{
 --background-color: #DEE;
 --commonForegroundColor: black;
---suplement-color:#ADD;
+--suplement-color:#CDD;
 --headerBackgroundColor: #889;
 --frontHeaderBackgroundColor: #273238;
 --frontHeaderForegroundColor: #f8ffff;
@@ -97,7 +97,7 @@ li{
     display: flex;
     flex-direction: row;
     justify-content:space-between;
-    margin: 5px 0 0 10px;
+    margin: 5px 0 0 0px;
     padding: 5px 2px 2px 10px;
     max-height: 300px;
 }
