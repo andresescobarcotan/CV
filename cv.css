@@ -1,49 +1,62 @@
 :root{
-   --header-color: #889;
+--background-color: #DEE;
+--headerBackgroundColor: #889;
+--frontHeaderBackgroundColor: #273238;
+--frontHeaderForegroundColor: #f8ffff;
+--infoBoxGridBackgroundColor: #EFF;
+--infoBoxFieldForegroundColor: #556;
+--infoBoxTitleBackgroundColor: #889;
+--infoBoxTitleForegroundColor: #EEF;
+--shadowColor: black;
    
 }
 
 body{
-    background-color: #DEE;
+    background-color: var(--background-color);
 }
 img {
   border-radius: 5%;
   margin: 5px 0px 0px 10px;
   position:absolute;
   float: left;
+  width: 12rem;
 }
 
 #CVMainGrid{
     display: grid;
-    grid-template-columns: 250px auto;
-    margin-top: 50px;
-    margin-left: 250px;
-    grid-row-gap: 50px;
+    grid-template-columns: 17rem auto auto;
+    margin-top: 5rem;
+    grid-row-gap: 2rem;
+    grid-column-gap: 4rem;
+    width: max-content;
+    height: max-content;
 }
 
 
 .InfoBoxGrid{
     display: grid;
-    background-color: #EFF;
+    background-color: var(--infoBoxGridBackgroundColor);
+    box-shadow: 1px 1px 2px 2px var(--shadowColor);
     font-family: Arial;
     grid-template-columns: auto auto;
-    width: 700px;
+    width: 20rem;
     grid-row-gap: 10px;
 }
 
 .infoBoxTitle {
     font-size: 1.0em;
-    background-color: #889;
-    color: #EEF;
+    background-color: var(--infoBoxTitleBackgroundColor);
+    color:var(--infoBoxTitleForegroundColor);
     font-weight:bold;
     grid-column-start: 1;
     grid-column-end:3;
     text-align: center;
+    height: 20px;
 }
 .infoBoxFieldName{
     grid-column-start: 1;
-    font-weight: Bold;
-    color: #556;
+    font-weight: bold;
+    color: var(--infoBoxFieldForegroundColor);
     padding-left: 5%;
 }
 
@@ -57,17 +70,16 @@ img {
     grid-column-start: 1;
     text-align: left;
     padding-left: 10%;
-    
     font-size: 0.85em;
 }
 #frontHeader { 
     display:grid;
-    background-color: #273238;  
-    color: #f8ffff;  
+    background-color: var(--frontHeaderBackgroundColor);  
+    color: #f8ffff;
     text-align: right;   
     box-shadow: 0px 0px 2px 2px #010;
     grid-column-gap: 2px;
-    grid-template-columns:  100px 1000px;
+    grid-template-columns: 100px;
 }
 #surname { color: #ababab; font-weight:bold;}
 #frontName{
@@ -90,8 +102,7 @@ img {
 #empty{
         grid-row-start:1;
         grid-column-start: 1;
-        background: #DEE !important;
-        width: 100px !important;
-
+        background: var(--background-color);
+        width: 100px ;
 }
 
