@@ -10,7 +10,7 @@
 --shadowColor: black;
    
 }
-
+/* Html root */
 body{
     background-color: var(--background-color);
 }
@@ -22,17 +22,8 @@ img {
   width: 12rem;
 }
 
-#CVMainGrid{
-    display: grid;
-    grid-template-columns: 17rem auto auto;
-    margin-top: 5rem;
-    grid-row-gap: 2rem;
-    grid-column-gap: 4rem;
-    width: max-content;
-    height: max-content;
-}
 
-
+/* Class rules */
 .InfoBoxGrid{
     display: grid;
     background-color: var(--infoBoxGridBackgroundColor);
@@ -72,6 +63,25 @@ img {
     padding-left: 10%;
     font-size: 0.85em;
 }
+
+.icons{
+    position: absolute;
+    margin-left: -1rem;
+    margin-top:-2.2rem;
+    font-size: 2.5rem;
+}
+/* IDs Rules */
+
+#CVMainGrid{
+    display: grid;
+    grid-template-columns: 17rem auto auto;
+    margin-top: 5rem;
+    grid-row-gap: 2rem;
+    grid-column-gap: 4rem;
+    width: max-content;
+    height: max-content;
+}
+
 #frontHeader { 
     display:grid;
     background-color: var(--frontHeaderBackgroundColor);  
@@ -98,11 +108,5 @@ img {
     margin-left: 500px;
      color: white;
     
-}
-#empty{
-        grid-row-start:1;
-        grid-column-start: 1;
-        background: var(--background-color);
-        width: 100px ;
 }
 
