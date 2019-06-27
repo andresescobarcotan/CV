@@ -1,6 +1,7 @@
 :root{
 --background-color: #DEE;
---suplement-color: yellow;
+--commonForegroundColor: black;
+--suplement-color:#ADD;
 --headerBackgroundColor: #889;
 --frontHeaderBackgroundColor: #273238;
 --frontHeaderForegroundColor: #f8ffff;
@@ -12,32 +13,25 @@
 --surnameForegroundColor: #ababab;
    
 }
-:root.blue{
-    --background-color: blue;
-    --headerBackgroundColor: #889;
-    --frontHeaderBackgroundColor: #273238;
-    --frontHeaderForegroundColor: #f8ffff;
-    --infoBoxGridBackgroundColor: #EFF;
-    --infoBoxFieldForegroundColor: #556;
-    --infoBoxTitleBackgroundColor: #889;
-    --infoBoxTitleForegroundColor: #EEF;
-    --shadowColor: black;
-    --surnameForegroundColor: #ababab;
-}
 /* Html root */
 body{
     background-color: var(--background-color);    
 }
+li{
+    font-weight: bold;
+}
 
 /* Class rules */
 .InfoBoxGrid{
-    display: grid;
     background-color: var(--infoBoxGridBackgroundColor);
     box-shadow: 1px 1px 2px 2px var(--shadowColor);
     font-family: Arial;
     grid-template-columns: auto auto;
-    width: 20rem;
+    width: 22rem;
     grid-row-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .infoBoxTitle {
@@ -51,25 +45,29 @@ body{
     height: 20px;
 }
 .infoBoxFieldName{
-    grid-column-start: 1;
     font-weight: bold;
     color: var(--infoBoxFieldForegroundColor);
     padding-left: 5%;
+    margin-bottom: 10px;
 }
 
 .infoBoxFieldValue{
-    grid-column-start: 2;
-    text-align: right;
-    padding-right: 5%;
+    padding-left: 2%;
+    color: var(--commonForegroundColor);
+    font-weight: normal;
+
 }
 
 .infoBoxFieldBigValue{
     grid-column-start: 1;
     text-align: left;
     padding-left: 10%;
+    padding-right: 10%;
     font-size: 0.85em;
 }
-
+.inverseBottomMargin{
+    margin-bottom: -10%;
+}
 .icons{
     position: absolute;
     margin-left: -1rem;
@@ -84,6 +82,7 @@ body{
     grid-row-gap: 2rem;
     grid-column-gap: 4rem;
     height: max-content;
+    background-color: var(--suplement-color);
 }
 
 #frontHeader { 
@@ -115,6 +114,8 @@ body{
     text-align:right;
 }
 
+
+
 #portrait{
     width: 100%;
     height: 100%;
@@ -131,4 +132,8 @@ body{
     display: flex;
     justify-content: center;
     width: auto;
+}
+
+.skills{
+    margin-bottom: 0%;
 }
