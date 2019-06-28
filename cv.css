@@ -22,16 +22,20 @@ li{
 }
 
 /* Class rules */
+.skills{
+    margin-bottom: 0%;
+    display:list-item;
+}
 .InfoBoxGrid{
     background-color: var(--infoBoxGridBackgroundColor);
     box-shadow: 1px 1px 2px 2px var(--shadowColor);
     font-family: Arial;
-    grid-template-columns: auto auto;
     width: 22rem;
     grid-row-gap: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    height: max-content;
 }
 
 .infoBoxTitle {
@@ -135,6 +139,3 @@ li{
     width: auto;
 }
 
-.skills{
-    margin-bottom: 0%;
-}
