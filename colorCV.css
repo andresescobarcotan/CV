@@ -9,7 +9,7 @@ html.teal{
     --baseColor6: #00ACC1;
     --baseColor8: #0097A7;
     --baseColor7: #00838F;
-    --baseColor9: linear-gradient(150deg, var(--baseColor5) 20%, var(--baseColor6));
+    --baseColor9: linear-gradient(150deg,var(--baseColor5), var(--baseColor6));
 }
 
 html.orange{
@@ -53,5 +53,5 @@ html.normal {
     --infoBoxTitleForegroundColor: var(--foregroundColor2);
     --shadowColor:var(--baseColor7);
     --surnameForegroundColor:var(--baseColor8); 
-    --icons-backgroundColor:var(--baseColor9);
+    --iconsBackgroundColor:var(--baseColor9);
 }
