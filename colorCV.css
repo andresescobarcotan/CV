@@ -1,0 +1,57 @@
+*{
+    --foregroundColor1: #333;
+    --foregroundColor2: white;
+    --baseColor1:#424242;
+    --baseColor2: #212121;
+    --baseColor3: #212121;
+    --baseColor5: #8BC34A;
+    --baseColor4: #8BC34A;
+    --baseColor6: #212121;
+    --baseColor8: #333;
+    --baseColor7: #212121;
+    --baseColor9: rgba(21,21,21,0);
+}
+
+*.orange{
+    --foregroundColor1: #333;
+    --foregroundColor2: antiquewhite;
+    --baseColor1:#FFECB3;
+    --baseColor2: #FFF59D;
+    --baseColor3: #FFD54F;
+    --baseColor5: #FFCA28;
+    --baseColor4: #FF9800;
+    --baseColor6: #FB8C00;
+    --baseColor8: #E65100;
+    --baseColor7: #EF6C00;
+    --baseColor9: linear-gradient(150deg, var(--baseColor5) 20%, var(--baseColor6));
+}
+
+*.normal{
+    --foregroundColor1: #556;
+    --foregroundColor2: whitesmoke;
+    --baseColor5: #EFF;
+    --baseColor1:#DEE;
+    --baseColor2: #CDD;
+    --baseColor8: #ababab;
+    --baseColor3: #889;
+    --baseColor6: #889;
+    --baseColor4: #273238;
+    --baseColor7: black;
+    --baseColor9: linear-gradient(150deg, var(--baseColor5) 20%, var(--baseColor6));
+}
+
+*{
+    --background-color: var(--baseColor1);
+    --commonForegroundColor:var(--foregroundColor1);
+    --suplement-color:var(--baseColor2);
+    --headerBackgroundColor: var(--baseColor3);
+    --frontHeaderBackgroundColor:var(--baseColor4);
+    --frontHeaderForegroundColor: var(--foregroundColor1);
+    --infoBoxGridBackgroundColor: var(--baseColor5);
+    --infoBoxFieldForegroundColor: var(--foregroundColor1);
+    --infoBoxTitleBackgroundColor: var(--baseColor6);
+    --infoBoxTitleForegroundColor: var(--foregroundColor2);
+    --shadowColor:var(--baseColor7);
+    --surnameForegroundColor:var(--baseColor8); 
+    --icons-backgroundColor:var(--baseColor9);
+}
