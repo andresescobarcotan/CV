@@ -1,18 +1,18 @@
-*{
+html.teal{
     --foregroundColor1: #333;
     --foregroundColor2: white;
-    --baseColor1:#424242;
-    --baseColor2: #212121;
-    --baseColor3: #212121;
-    --baseColor5: #8BC34A;
-    --baseColor4: #8BC34A;
-    --baseColor6: #212121;
-    --baseColor8: #333;
-    --baseColor7: #212121;
-    --baseColor9: rgba(21,21,21,0);
+    --baseColor1:#B2EBF2;
+    --baseColor2: #80DEEA;
+    --baseColor3: #4DD0E1;
+    --baseColor5: #26C6DA;
+    --baseColor4: #00BCD4;
+    --baseColor6: #00ACC1;
+    --baseColor8: #0097A7;
+    --baseColor7: #00838F;
+    --baseColor9: linear-gradient(150deg, var(--baseColor5) 20%, var(--baseColor6));
 }
 
-*.orange{
+html.orange{
     --foregroundColor1: #333;
     --foregroundColor2: antiquewhite;
     --baseColor1:#FFECB3;
@@ -26,7 +26,7 @@
     --baseColor9: linear-gradient(150deg, var(--baseColor5) 20%, var(--baseColor6));
 }
 
-*.normal{
+html.normal {
     --foregroundColor1: #556;
     --foregroundColor2: whitesmoke;
     --baseColor5: #EFF;

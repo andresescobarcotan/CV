@@ -5,13 +5,18 @@
     <link rel="stylesheet" type="text/css" href="cv.css">
 </head>
 <body>
-    <div id='gridContainer'>
+    <div id='gridContainer'>    
     <div id="CVMainGrid">
         <div id='frontHeader'>
             <img id='portrait' src='andres.png'/>
             <div id='nameAndTitle'>
                 <div id='frontName'>Andrés <span id='surname'> Escobar </span> Cotán</div>
                 <div id='academicTitle'> Master Degree in Computer Science – Technical Degree in Computer Science </div>
+            </div>
+            <div id='stylesButton'>
+                <button onclick="theming('normal')" id="normalButton"></button>
+                <button onclick="theming('orange')" id="orangeButton"></button>
+                <button onclick="theming('teal')" id="tealButton"></button>
             </div>
         </div>
         <div class='empty'></div>
@@ -89,4 +94,25 @@
     </div>
 </div>
 </body>
+<script type="text/javascript">
+    var rootElement = document.documentElement;
+    // Add the normal class by default
+    rootElement.classList.toggle('normal');
+    function theming(myTheme){
+        if(!rootElement.classList.contains(myTheme)){
+            if(rootElement.classList.length > 0){
+                removePreviousclasses();
+            }
+            rootElement.classList.toggle(myTheme);
+        }
+        
+    }
+    function removePreviousclasses(){
+        // Remove previous class
+        var copyClass = rootElement.classList;
+        for(var i=0; i < copyClass.length; i++){
+            rootElement.classList.remove(copyClass.item(i));
+        }
+    }
+</script>
 </html>

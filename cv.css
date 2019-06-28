@@ -69,6 +69,14 @@ li{
     justify-content: center;
     width: auto;
 }
+#stylesButton{
+    display: flex;
+    height:15px;
+}
+#stylesButton button{
+    border: none;
+}
+#normalButton{background-color:silver;} #orangeButton{background-color:orangered;} #tealButton{background-color: turquoise;}
 
 
 /* Class rules */
